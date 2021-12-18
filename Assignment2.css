@@ -16,7 +16,7 @@ body{
 }
 
 input[type="text"] {
-    width : 50%;
+    width : 25%;
     padding : 12px;
     border : 1px solid #ccc;
     border-radius: 5px;
@@ -34,7 +34,7 @@ input[type="tel"] {
 
 }
 input[type="number"]{
-    width : 40%;
+    width : 25%;
     padding : 12px;
     border : 1px solid #ccc;
     border-radius: 5px;
@@ -48,7 +48,7 @@ legend{
     border : 1px solid #ccc;
     border-radius: 5px;
     margin:10px;
-}
+} 
 .container1{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr)) ;
@@ -83,7 +83,7 @@ h3{
 }
 .item-container{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(4,1fr);
 }
 .nest-items{
     padding : 10px;
@@ -106,10 +106,4 @@ button{
     padding:3px 10px;
     display:inline-block;
     cursor: pointer;
-}
-.text{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
 }

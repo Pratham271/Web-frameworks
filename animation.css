@@ -1,0 +1,33 @@
+img{
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    left: 43%;
+    animation-name: animation1;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+}
+@keyframes animation1 {
+    0%{
+        bottom: 0px;
+        left: 43%;
+    }
+    25%{
+        bottom: 55%;
+        left: 0px;
+        transform:rotate(360deg);
+    }
+    50%{
+        bottom: 73%;
+        left: 43%;
+    }
+    75%{
+        bottom: 55%;
+        left: 85%;
+    }
+    100%{
+        bottom: 0%;
+        left:43%;
+    }
+    
+}

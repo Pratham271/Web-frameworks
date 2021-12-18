@@ -1,0 +1,12 @@
+var myVar = "Hello World";
+console.log(myVar);
+//myfun();
+// abc = myfun();
+var o = Object.create({});
+o.course1 = 76;
+o.course2 = 82;
+console.log(o);
+var arr = [34, 454, 676, 43, 546, 87, 90];
+console.log(toString.call(o) === ['object Array']);
+console.log(arr.join()[2]);
+console.log(arr.slice(2, 5));

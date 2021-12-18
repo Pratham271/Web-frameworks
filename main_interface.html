@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="Style/bootstrap.min.css">
+    <link rel="stylesheet" href="Style/main_interface.css">
+    <script src="JS/item.js"></script>
+    <script src="JS/itemoperation.js"></script>
+    <script src="JS/controller.js"></script>
+</head>
+<body>
+    <h4 class="alert-success text-center">CRUD APPLICATION</h4>
+    <!-- Input Boxes -->
+    <div>
+        <p class="mb-3">
+            <label for="" class="form-label">Item Number</label>
+            <input type="text"  id="iid" placeholder="Item Number" class="form-control">
+        </p>
+        <p class="mb-3">
+            <label for="" class="form-label">Item Name</label>
+            <input type="text" id="iname" placeholder="Item Name" class="form-control">
+        </p>
+        <p class="mb-3">
+            <label for="" class="form-label">Item Price</label>
+            <input type="range" min=0 max=10000 id="iprice" class="form-range">
+        </p>
+        <p class="mb-3">
+            <label for="" class="form-label">Item Weight</label class="form-control">
+            <input type="number" id="iwt" class="form-control">
+        </p>
+        <p class="mb-3">
+            <label for="" class="form-label">Item Description</label>
+           <textarea  id="idesc" cols="30" rows="3" placeholder="Item Description" class="form-control"></textarea>
+        </p>
+    </div>
+    <!-- Buttons -->
+    <div>
+        <button onclick="addRecord()">Add</button>
+    </div>
+    <!-- Output Table -->
+    <div>
+        <table class="table table-success table-striped">
+            <thead>
+              <tr>
+                <th scope="col">Item#</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Item Price</th>
+                <th scope="col">Item Weight</th>
+                <th scope="col">Item Description/th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>

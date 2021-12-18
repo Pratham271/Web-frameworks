@@ -1,0 +1,27 @@
+header{
+    height: 100px;
+}
+.header{
+    height:inherit;
+    display:inline;
+}
+*{
+    border:1px solid red;
+    margin:2px;
+}
+header > div{
+    background-color: lightseagreen;
+}
+header + div{
+    border: 10px solid red;
+}
+header ~ div{
+    color : greenyellow;
+    text-align:right;
+}
+figure{
+    width:200px;
+}
+input[value="hide"]:checked ~ img{
+    display:none;
+}
