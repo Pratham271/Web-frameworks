@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="Assignment2.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>Lab Assignment </p>
+        <hr style="width: 100%" , size="2" , color=black>
+        <p>
+            Write JavaScript code to generate the marksheet. The student’s details and marks obtained should be filled
+            in the input boxes
+            and after submitting the form, the marksheet should be generated as per the information provided. The grades
+            should be given
+            as per the following criteria: A+ => 81 to 100, A=> 72 to 80, B+=> 64 to 71, B=> 56 to 63, C+=> 48 to 55,
+            C=> 42 to 47, D=> 40
+            to 41 and F=>0 to 39. Consider that the courses are 4 credits each. Grade points will be: A+=10, A=9, B+=8,
+            B=7, C+=6, C=5, D=4
+            and F=0.
+        </p>
+        <hr style="width: 100%" , size="2" , color=black>
+
+        <div class="text">
+            <p>Name : <input type="text" name="name" id="txtName" placeholder="" required></p>
+            <p>Roll No :<input type="text" pattern="[0-9]{2}[A-Z]{3}[0-9]{3}" id='rollNo'></p>
+            <p>Sem : <input type="number" id="txtSem"></p>
+            <p>Branch : <input type="text" id="txtBranch"></p>
+        </div>
+
+        Marks
+
+        <legend>
+            <div class="text">
+                <p>Course 1: <input type="number" id="Course1"></p>
+                <p>Course 2: <input type="number" id="Course2"></p>
+                <p>Course 3: <input type="number" id="Course3"></p>
+                <p>Course 4: <input type="number" id="Course4"></p>
+                <p>Course 5: <input type="number" id="Course5"></p>
+            </div>
+        </legend>
+
+
+        <button onclick="getReport()">submit</button>
+        <hr style="width: 98%" , size="1" , color=black>
+
+
+        <div class="container">
+            <div class="items">
+                <div class="hello">
+                    <h3>The North Cap University</h3>
+                    <h3>Session 2020-21 Marksheet</h3>
+                    <div class="items item-container">
+                        <div class="nest-items">Name: <span id="txt1Name"></span></div>
+                        <div class="nest-items">Roll No: <span id="rollno1"></span></div>
+                        <div class="nest-items">Sem: <span id="txtSem1"></span></div>
+                        <div class="nest-items">Branch: <span id="txtBrnch"></span></div>
+                    </div>
+                    <div class="items item-1-container">
+                        <div class="nested-items"><u>Course Name</u></div>
+                        <div class="nested-items"><u>Grade Obtained</u></div>
+                        <div class="nested-items"><u>Credits Earned</u></div>
+                        <div class="nested-items">Course1</div>
+                        <div class="nested-items" id="gradeobtained1">NIL</div>
+                        <div class="nested-items" id="creditsobtained1">NIL</div>
+                        <div class="nested-items">Course2</div>
+                        <div class="nested-items" id="gradeobtained2">NIL</div>
+                        <div class="nested-items" id="creditsobtained2">NIL</div>
+                        <div class="nested-items">Course3</div>
+                        <div class="nested-items" id="gradeobtained3">NIL</div>
+                        <div class="nested-items" id="creditsobtained3">NIL</div>
+                        <div class="nested-items" >Course4</div>
+                        <div class="nested-items" id="gradeobtained4">NIL</div>
+                        <div class="nested-items" id="creditsobtained4">NIL</div>
+                        <div class="nested-items">Course5</div>
+                        <div class="nested-items" id="gradeobtained5">NIL</div>
+                        <div class="nested-items" id="creditsobtained5">NIL</div>
+                    </div>
+                    <div class="CGPA">CGPA : <span id="txtAvgMarks"></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Assignment2.js"></script>
+
+</body>
+
+</html>
