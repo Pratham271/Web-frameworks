@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <!-- <input type="number" id="text" onClick(printnum)> -->
+    <ul id="element">
+        <li class="list-items">First Element</li>
+        <li class="list-items">Second Element</li>
+        <li class="list-items">Third Element</li>
+    </ul>
+    <table>
+        <tr>
+            <td>One</td>
+            <td>Two</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>Four</td>
+        </tr>
+    </table>
+    <script>
+         // Root Node
+        //  console.log(document.documentElement);
+        //  console.log(document.body);
+        //  console.log(document.head);
+
+        //  // Childrens
+        //  console.log(document.body.childNodes);
+        //  console.log(document.body.children);
+
+        // Id search
+        // element.style.backgroundColor = "red";
+        // console.log();
+
+        const ultag = document.getElementById("element");
+        ultag.style.backgroundColor = 'red';
+        // function printnum()
+        // {
+        //     const num = document.getElementById("text");
+        //     console.log(num);
+        // }
+
+        // let listItem = document.getElementsByClassName("list-items");
+        // console.log(listItem);        
+
+        const listItems = document.querySelector('#element');
+        console.log(listItems);
+
+    </script>
+</body>
+</html>
